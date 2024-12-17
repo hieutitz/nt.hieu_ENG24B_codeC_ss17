@@ -5,7 +5,6 @@
 void nhapChuoi(char *str) {
     getchar();
     fgets(str, 100, stdin);
-    str[strcspn(str, "\n")] = '\0';
 }
 
 void inDaoNguoc(char *str) {
