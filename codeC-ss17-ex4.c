@@ -50,14 +50,6 @@ void inSoNguyenTo(int *arr, int size) {
     printf("\n");
 }
 
-void daoNguocMang(int *arr, int size) {
-    printf("Mang dao nguoc: ");
-    for (int i = size - 1; i >= 0; i--) {
-        printf("%d ", *(arr + i));
-    }
-    printf("\n");
-}
-
 int main() {
     int arr[100];
     int size = 0;
@@ -88,13 +80,10 @@ int main() {
             inSoNguyenTo(arr, size);
             break;
         case 4:
-            daoNguocMang(arr, size);
             break;
         case 5:
-           
             break;
         case 6:
-            
             break;
         case 7:
             printf("Thoat chuong trinh.\n");
