@@ -31,15 +31,6 @@ int demTu(char *str) {
     return count;
 }
 
-void inHoaChuCai(char *str) {
-    while (*str) {
-        if (isalpha(*str)) {
-            *str = toupper(*str);
-        }
-        str++;
-    }
-}
-
 void themChuoi(char *str1, char *str2) {
     strcat(str1, str2);
 }
@@ -71,8 +62,6 @@ int main() {
             printf("So luong tu trong chuoi: %d\n", demTu(str1));
             break;
         case 4:
-            inHoaChuCai(str1);
-            printf("Chuoi sau khi in hoa: %s\n", str1);
             break;
         case 5:
             printf("Nhap chuoi khac: ");
